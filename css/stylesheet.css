@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.header-left{
+    background-color: green;
+    width: 30%;
+    padding: 10px;
+    float: left;
+    height: 450px;
+}
+
+.header-left h1, p{
+    color: white;
+}
+
+.profilepicture{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+.main{
+    background-color: green;
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+    float: left;
+}
+.profile, .hobbies{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:white;
+    text-align: center;
+}
+
+.main{
+    color:white;
+    text-align: center;
+}
+.head{
+
+}
+
+.container {
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+}
+
+.header-right{
+    float: left;
+    width: 70%;
+    height: 450px;
+    overflow: hidden;
+    background-color: green;
+}
+
+.current{
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    opacity: 1;
+    animation:  7s zoomout infinite alternate ease-out;
+    /* -webkit-transition: opacity 1.6s ease-out, -webkit-transform 7.2s linear;
+    -moz-transition: opacity 1.6s ease-out, -moz-transform 7.2s linear;
+    -o-transition: opacity 1.6s ease-out, -o-transform 7.2s linear;
+    transition: opacity 1.6s ease-out 0s, transform 7.2s linear 0s; */
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+}
+
+@keyframes zoomout{
+    0% { transform: scale(1); }
+    100% { transform: scale(0.9); }
+}
+@-webkit-keyframes zoomout{
+    0% { transform: scale(1); }
+    100% { transform: scale(0.9); }
+}
+@-moz-keyframes zoomout{
+    0% { transform: scale(1); }
+    100% { transform: scale(0.9); }
+}
+@-ms-keyframes zoomout{
+    0% { transform: scale(1); }
+    100% { transform: scale(0.9); }
+}
+
+@-o-keyframes zoomout{
+    0% { transform: scale(1); }
+    100% { transform: scale(0.9); }
+}
+
+
+.banner-image {
+    height: 550px;
+    width: 115%;
+    margin-top: -30px;
+    margin-left: -53px;
+    
+    background-size: cover;
+    opacity: 0.7;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+
+.hidden{
+    display: none;
+    transform: scale(1.2, 1.2);
+}
+
+.titlename{
+    position: absolute;
+    width: 40%;
+    top: 200px;
+    left: 45%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.hobby{
+    float: left;
+    width: 25%;
+    opacity: 0.7;
+}
+.hobby img{
+    max-width: 240px;
+}
+
+
